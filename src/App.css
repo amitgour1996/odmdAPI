@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.search {
+  margin: 32px 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.search input {
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #eee;
+  width: 80%;
+  margin: auto;
+}
+
+.search button {
+  margin: 1rem auto;
+  width: 6rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search button:hover{
+  cursor: pointer;
+}
+
+.search button:active {
+  border-color: #000;
+  color: #000;
+  background-color: #fff;
+}
+
+.searchResult {
+  display: flex;
+  flex-flow: column;
+}
+
+.poster {
+  height: 250px;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 80%;
+  margin: auto;
+  grid-gap: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+@media (min-width: 500px) {
+  .search {
+    max-width: 50%;
+    margin: 32px auto;
+    min-width: 500px;
+  }
+
+  .searchResult {
+    flex-flow: row;
+    justify-content: center;
+  }
+  .poster {
+    height: 400px;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+}
